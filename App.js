@@ -39,13 +39,13 @@ const handleStatusChange = (id) => {
   if (joke.id === id) {
   joke.done = !joke.done;
   }
-  return task;
+  return joke;
   });
   setJokes(updatedJokes);
   }
 
   const handleAddJoke = (jokeDescription, jokeDone) => {
-    const updatedJokes = [...tasks];
+    const updatedJokes = [...jokes];
         updatedJokes.push(
           {
             id: uuid(),
